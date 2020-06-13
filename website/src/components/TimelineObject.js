@@ -7,7 +7,6 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Container from '@material-ui/core/Container';
@@ -19,7 +18,7 @@ class TimelineObject extends React.Component {
 
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
-                <Container>
+                <Container className="experience-container">
                     <Typography variant="h3" color="textPrimary">
                         {this.props.title}
                     </Typography>
@@ -33,20 +32,26 @@ class TimelineObject extends React.Component {
                                 </TimelineOppositeContent>
                                 <TimelineSeparator>
                                     <TimelineDot />
-                                    <TimelineConnector />
+                                    {object && object.data ? <TimelineConnector /> : <React.Fragment />}
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    {object.data.map(function (obj, i) {
+                                    {object && object.data ? object.data.map(function (obj, i) {
                                         return <div key={i}>
+                                            <br /><br />
                                             <Typography variant="h6" component="h1">
                                                 {obj.title}
                                             </Typography>
-                                            <Typography>{obj.definition}</Typography>
+                                            {obj.definition && Array.isArray(obj.definition) ? obj.definition.map(function (def, k) {
+                                                return <Typography key={k}>{def}</Typography>}) 
+                                                : 
+                                                <Typography>{obj.definition}</Typography>
+                                            }
+                                            <br /><br />
                                         </div>
-                                    })}
+                                    }) : <React.Fragment />}
                                 </TimelineContent>
                             </TimelineItem>
-                        }) : <div></div>}
+                        }) : <React.Fragment />}
                     </Timeline>
                 </Container>
             </MuiThemeProvider>

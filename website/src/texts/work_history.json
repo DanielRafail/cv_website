@@ -14,18 +14,16 @@
             "data": [
                 {
                     "title": "D-Teck",
-                    "definition": "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources. Designed and updated layouts to meet usability and performance requirements. Produced websites compatible with multiple browsers and devices."
-                }
-            ]
-        },
-        {
-            "year": "2020",
-            "data": [
+                    "definition": ["Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.", "Designed and updated layouts to meet usability and performance requirements.", "Produced websites compatible with multiple browsers and devices."]
+                },
                 {
                     "title": "Sylvan Adams YM-YWHA",
                     "definition": "Experience in customer service, taking care of the elderly and achieving all their requests in a timely and respectful manner."
                 }
             ]
+        },
+        {
+            "year": "Today"
         }
     ]
 }

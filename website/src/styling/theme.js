@@ -17,6 +17,12 @@ export default createMuiTheme({
       root:{
         flex: "0.04"
       }
+    },
+    MuiGrid:{
+      root:{
+        width:"99% !important",
+        marginBottom:"20px !important"
+      }
     }
   }
 });

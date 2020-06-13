@@ -2,7 +2,7 @@ body{
     margin:0px;
 }
 
-#root > *:not(#navigation-header) {
+#root > *:not(#navigation-header):not(.no-margin) {
     margin:8px;
 }
 
@@ -13,6 +13,7 @@ body{
 
 .personality-image{
     width: 350px;
+    height:230px;
     float:left;
 }
 
@@ -21,7 +22,83 @@ body{
     text-align: center;
     vertical-align: middle;
     padding:30px 100px;
-    margin:50px 8px !important;
-    background-color: lightgrey !important;
+    margin:50px 8px 150px 8px !important;
+    background-color: lightsteelblue !important;
 }
+
+.personality-image-paragraph{
+    width:85%;
+    margin-top:0px;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.valign-middle{
+    vertical-align: middle;
+}
+
+.email{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.footer-icon{
+    width:25px;
+    height:25px;
+    margin: 5px 20px;
+}
+
+.footer-container > footer > div{
+    text-align: center;
+}
+
+.experience-container{
+    margin: 3% !important;
+}
+
+.fade-out-image{
+    width: 450px;
+    height: 250px;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+.hobbies-container:hover > .fade-out-image{
+    opacity: 0.5;
+    transition: opacity 1.5s;
+}
+
+.hobbies-container:hover > .hobbies-container-text-center{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.hobbies-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    display:inline-flex;
+  }
+
+  .hobbies-container-text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    opacity: 0;
+    transition: opacity 1.5s;
+    font-size: 30px !important;
+  }
+
+  .hobbies-row{
+    text-align: center;
+    margin: 20px 20px;
+  }
+
+  .hobbies-title{
+    text-align: center;
+    padding: 20px 0px;
+  }
 

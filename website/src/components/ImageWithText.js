@@ -12,13 +12,25 @@ class ImageWithText extends React.Component {
                     <Grid item xs={1}>
                     </Grid>
                     <Grid item xs={3}>
-                        <img src={this.props.src} alt={this.props.alt} class="personality-image" />
+                        <img src={this.props.src} alt={this.props.alt} className="personality-image" />
                     </Grid>
-                    <Grid item xs={8}>
-                        <Typography variant="body1" color="textPrimary">
-                            {this.props.description}
-                        </Typography>
-                    </Grid>
+                    {this.props.title ?
+                        <Grid item xs={7}>
+                            <Typography variant="h4" color="textPrimary">
+                                {this.props.title}
+                            </Typography>
+                            <Typography variant="body1" color="textPrimary">
+                                {this.props.description}
+                            </Typography>
+                        </Grid>
+                        :
+                        <Grid item xs={7}>
+                            <Typography variant="body1" color="textPrimary">
+                                {this.props.description}
+                            </Typography>
+                        </Grid>
+                    }
+
                 </Grid>
             </MuiThemeProvider>
         );
