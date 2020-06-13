@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+}
+
+#root > *:not(#navigation-header) {
+    margin:8px;
+}
+
+.carousel{
+    transform: scaleY(0.7);
+    margin-top: -7%;
+}
+
+.personality-image{
+    width: 350px;
+    float:left;
+}
+
+.personality-title-paper{
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding:30px 100px;
+    margin:50px 8px !important;
+    background-color: lightgrey !important;
+}
+
