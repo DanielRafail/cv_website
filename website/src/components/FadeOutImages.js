@@ -8,7 +8,7 @@ class FadeOutImages extends React.Component {
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
                 <div className="hobbies-container">
-                    <img src={this.props.src} className="fade-out-image"></img>
+                    <img src={this.props.src} className="fade-out-image" alt={this.props.alt}></img>
                     <Typography variant="body1" className="MuiTypography-body1 hobbies-container-text-center">{this.props.title}</Typography>
                 </div>
             </MuiThemeProvider>

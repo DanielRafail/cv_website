@@ -23,6 +23,19 @@ export default createMuiTheme({
         width:"99% !important",
         marginBottom:"20px !important"
       }
+    },
+    MuiGridListTile:{
+      root:{
+        width:"auto !important"
+      },
+      tile:{
+        width: "400px !important"
+      }
+    },
+    MuiGridList:{
+      root:{
+        marginLeft: "5% !important"
+      }
     }
   }
 });

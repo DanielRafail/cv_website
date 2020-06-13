@@ -1,4 +1,4 @@
-body{
+body {
     margin:0px;
 }
 
@@ -64,14 +64,15 @@ body{
     opacity: 1;
     transition: opacity 1.5s;
 }
-.hobbies-container:hover > .fade-out-image{
-    opacity: 0.5;
-    transition: opacity 1.5s;
-}
-
-.hobbies-container:hover > .hobbies-container-text-center{
-    opacity: 1;
-    transition: opacity 1.5s;
+.hobbies-container:hover {
+    .fade-out-image{
+        opacity: 0.5;
+        transition: opacity 1.5s;
+    }
+    .hobbies-container-text-center{
+        opacity: 1;
+        transition: opacity 1.5s;
+    }
 }
 
 .hobbies-container {
@@ -102,3 +103,24 @@ body{
     padding: 20px 0px;
   }
 
+  .grid-color-skyblue{
+    background-color:skyblue;
+  }
+
+  .grid-color-darkgrey{
+    background-color:darkgrey;
+  }
+
+  .grid-color-cadetblue{
+    background-color:cadetblue;
+  }
+
+  .gridListTile-image{
+      height:160px !important;
+      background-color: white;
+      max-width: 400px !important;
+  }
+
+  .margin-bottom{
+    margin-bottom: 30px !important;
+  }

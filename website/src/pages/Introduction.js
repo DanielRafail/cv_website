@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 
 class Introduction extends React.Component {
   render() {
-    console.log(this.props)
     return (
       <MuiThemeProvider theme={createMuiTheme(theme)}>
         <div>
