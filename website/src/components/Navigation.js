@@ -17,13 +17,34 @@ class Navigation extends React.Component {
         }
     }
 
-    componentDidMount(props){
-        this.setState({navigation_tab_value: history.location && history.location.state ? history.location.state.tabIndex : 0})
+    componentDidMount(props) {
+        this.setState({ navigation_tab_value: this.verifyTabIndex()})
+    }
+
+    verifyTabIndex = () => {
+        var tab_index = 0;
+        if (history.location && history.location.state) {
+            tab_index = history.location.state.tabIndex;
+        } else {
+            if (history.location) {
+                switch (history.location.pathname) {
+                    case "/introduction":
+                        tab_index = 0;
+                    case "/experience":
+                        tab_index = 1;
+                    case "/personality":
+                        tab_index = 2;
+                    default:
+                        break;
+                }
+            }
+        }
+        return tab_index;
     }
 
 
     handleChange = (event, newValue) => {
-        this.setState(() => ({ navigation_tab_value: newValue }));
+        this.setState(() => ({ navigation_tab_value: this.state.location && this.state.location.tabIndex ? this.state.location.tabIndex : newValue }));
     }
     render() {
         return (
@@ -32,8 +53,8 @@ class Navigation extends React.Component {
                     <Paper>
                         <Tabs
                             TabIndicatorProps={{
-                                style:{
-                                   animation: "none"
+                                style: {
+                                    animation: "none"
                                 }
                             }
                             }
@@ -43,9 +64,9 @@ class Navigation extends React.Component {
                             textColor="primary"
                             centered
                         >
-                            <LinkTab label="Introduction" href="/introduction" tabIndex={0}/>
-                            <LinkTab label="Experience" href="/experience" tabIndex={1}/>
-                            <LinkTab label="Personality" href="/personality" tabIndex={2}/>
+                            <LinkTab label="Introduction" href="/introduction" tabIndex={0} />
+                            <LinkTab label="Experience" href="/experience" tabIndex={1} />
+                            <LinkTab label="Personality" href="/personality" tabIndex={2} />
                         </Tabs>
                     </Paper>
                 </nav>

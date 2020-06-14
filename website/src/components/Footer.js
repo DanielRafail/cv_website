@@ -52,11 +52,11 @@ export default function Footer() {
                     </div>
                     <Typography variant="body1" className="MuiTypography-body1 inline-block email">Danielraf2@gmail.com</Typography>
                     <div id="footer-icon-container">
-                        <a href="https://www.linkedin.com/in/daniel-rafail-55b961187/" target="_blank">
-                            <img src={linkedin} className="footer-icon" />
+                        <a href="https://www.linkedin.com/in/daniel-rafail-55b961187/">
+                            <img src={linkedin} className="footer-icon"  alt="linkedin icon"/>
                         </a>
                         <a href="https://github.com/DanielRafail">
-                            <img src={github} className="footer-icon" />
+                            <img src={github} className="footer-icon" alt="github icon"/>
                         </a>
                     </div>
                     <Copyright />

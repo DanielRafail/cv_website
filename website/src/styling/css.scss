@@ -54,7 +54,7 @@ body {
     text-align: center;
 }
 
-.experience-container{
+.experience-container, .index-paragraph-container{
     margin: 3% !important;
 }
 
@@ -75,52 +75,73 @@ body {
     }
 }
 
-.hobbies-container {
+.hobbies-container, .index-container {
     position: relative;
     text-align: center;
     color: white;
     display:inline-flex;
   }
 
-  .hobbies-container-text-center{
+.hobbies-container-text-center, .index-container-text-container{
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   
+  }
+  .hobbies-container-text-center{
+    top: 50%;
     text-decoration: underline;
     opacity: 0;
     transition: opacity 1.5s;
     font-size: 30px !important;
   }
+.index-container-text-container{
+    top:25%;
+  }
+.index-container-text-center{
+    font-size: 50px !important;
+  }
+.index-container-text-center-description{
+    font-size: 35px !important;
+  }
 
-  .hobbies-row{
+.hobbies-row{
     text-align: center;
     margin: 20px 20px;
   }
 
-  .hobbies-title{
+.hobbies-title{
     text-align: center;
     padding: 20px 0px;
   }
 
-  .grid-color-skyblue{
+.grid-color-skyblue{
     background-color:skyblue;
   }
 
-  .grid-color-darkgrey{
+.grid-color-darkgrey{
     background-color:darkgrey;
   }
 
-  .grid-color-cadetblue{
+.grid-color-cadetblue{
     background-color:cadetblue;
   }
 
-  .gridListTile-image{
+.gridListTile-image{
       height:160px !important;
       background-color: white;
       max-width: 400px !important;
   }
 
-  .margin-bottom{
+.margin-bottom{
     margin-bottom: 30px !important;
   }
+
+.index-picture{
+    width:100%;
+    opacity:0.85;
+}
+
+section > .index-paragraph{
+    font-size: 20px;
+}
