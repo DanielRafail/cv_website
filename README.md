@@ -7,3 +7,5 @@
 1. Fix Ratio on mobile phones
 
 2. Perhaps add i18n functionality
+
+3. Grammatical mistakes
