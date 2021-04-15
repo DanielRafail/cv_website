@@ -29,7 +29,7 @@ class Personality extends React.Component {
                 <div>
                     <Carousel images={[buildings, buildings2, code, pigeon, wall]} />
                 </div>
-                <Paper className="personality-title-paper">
+                <Paper className="personality-title-paper no-margin">
                     <Typography variant="h3" color="textPrimary" align="center">
                         A creative, free flowing mind, open to criticism and feedback, who believes that everyday is a new learning experience.
                     </Typography>
