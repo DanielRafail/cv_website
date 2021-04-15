@@ -8,7 +8,7 @@ class ImageWithText extends React.Component {
     render() {
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
-                <Grid container spacing={3} className={"grid-color-" + this.props.gridColor}>
+                <Grid container spacing={3} className={"image-with-text grid-color-" + this.props.gridColor}>
                     <Grid item xs={1}>
                     </Grid>
                     <Grid item xs={3}>

@@ -4,6 +4,4 @@
 
 <h2> TODO </h2>
 
-1. Fix Ratio on mobile phones
-
-2. Perhaps add i18n functionality
+1. Perhaps add i18n functionality
