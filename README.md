@@ -5,3 +5,9 @@
 <h2> TODO </h2>
 
 1. Perhaps add i18n functionality
+
+<h4> To deploy on surge: </h4>
+<p>npm run build<\p>
+<p>cd build<\p>
+<p>cp index.html 200.html<\p>
+<p>surge<\p>
