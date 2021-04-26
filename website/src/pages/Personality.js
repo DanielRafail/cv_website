@@ -10,11 +10,14 @@ import idea from "../images/idea.jpg"
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Hobbies from "../components/Hobbies"
-import buildings from "../images/buildings.png"
-import buildings2 from "../images/buildings2.png"
-import code from "../images/code.png"
-import pigeon from "../images/pigeon.png"
-import wall from "../images/wall.png"
+import buildings from "../images/buildings.jpg"
+import buildings2 from "../images/buildings2.jpg"
+import pigeon from "../images/pigeon.jpg"
+import wall from "../images/wall.jpg"
+import smallbuildings from "../images/smallbuildings.jpg"
+import smallbuildings2 from "../images/smallbuildings2.jpg"
+import smallpigeon from "../images/smallpigeon.jpg"
+import smallwall from "../images/smallwall.jpg"
 import taekwondo from "../images/taekwondo.jpg"
 import photography from "../images/photography.jpg"
 import videogames from "../images/videogames.jpg"
@@ -23,11 +26,30 @@ import technology from "../images/technology.jpg"
 import netflix from "../images/netflix.jpg"
 
 class Personality extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { windowWidth: window.innerWidth };
+      }
+    
+     handleResize = (e) => {
+      this.setState({ windowWidth: window.innerWidth });
+     };
+    
+     componentDidMount() {
+      window.addEventListener("resize", this.handleResize);
+     }
+    
+     componentWillUnmount() {
+      window.addEventListener("resize", this.handleResize);
+     } 
+
+     
     render() {
+        const { windowWidth } = this.state; 
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
                 <div>
-                    <Carousel images={[buildings, buildings2, code, pigeon, wall]} />
+                    <Carousel images={windowWidth && windowWidth > 1000 ? [buildings, buildings2, pigeon, wall] : [smallbuildings, smallbuildings2, smallpigeon, smallwall]} />
                 </div>
                 <Paper className="personality-title-paper no-margin">
                     <Typography variant="h3" color="textPrimary" align="center">

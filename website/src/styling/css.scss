@@ -137,6 +137,11 @@ body > #root > .personality-title-paper{
       top:50% !important;
       width:100%;
     }
+    #root > .experience-container{
+      ul > li > div{
+        width:275px !important;
+      }
+    }
       @media only screen and (max-width: 768px){
         body > #root > .image-with-text{
           display:block;
@@ -169,11 +174,11 @@ body > #root > .personality-title-paper{
           }
         }
         div > .gridListTile-image{
-          width: 75%;
+          width: 100%;
         }
         #root > .experience-container{
           ul > li > div{
-            width:300px !important;
+            width: 100% !important;
           }
         }
         body > #root > .hobbies-row{
@@ -184,6 +189,9 @@ body > #root > .personality-title-paper{
               max-width:100%;
             }
           }
+        }
+        #root > .experience-container > ul{
+          display: block;
         }
       }
     #navigation-header > *{
@@ -205,10 +213,11 @@ body > #root > .personality-title-paper{
     .fade-out-image{
       width:100%;
     }
-    #root > .experience-container{
-      ul > li > div{
-        width:275px !important;
-      }
+  }
+
+  @media only screen and (max-width: 500px){
+    #root > .experience-container > ul{
+      margin-left: auto !important;
     }
   }
 
@@ -266,4 +275,13 @@ body > #root > .personality-title-paper{
 
 section > .index-paragraph{
     font-size: 20px;
+}
+.blank-page{
+  height: 2000px;
+  width: 2000px;
+  z-index: 99;
+  margin-top: -10%;
+  overflow:hidden;
+  background-color: white;
+  position: relative;
 }
