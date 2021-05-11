@@ -10,7 +10,7 @@
 <p>npm run build</p>
 <p>cd build</p>
 <p>cp index.html 200.html</p>
-<p>surge<\p>
+<p>surge</p>
 
 <h2> BUGS </h2>
 <p> Does not display introduction image correctly on iphone 11 for some reason</p>
