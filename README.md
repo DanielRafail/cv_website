@@ -7,10 +7,10 @@
 1. Perhaps add i18n functionality
 
 <h4> To deploy on surge: </h4>
-<p>npm run build<\p>
-<p>cd build<\p>
-<p>cp index.html 200.html<\p>
+<p>npm run build</p>
+<p>cd build</p>
+<p>cp index.html 200.html</p>
 <p>surge<\p>
 
-<h2> BUGS <h2/>
-<p> Does not display introduction image correctly on iphone 11 for some reason<p/>
+<h2> BUGS </h2>
+<p> Does not display introduction image correctly on iphone 11 for some reason</p>
