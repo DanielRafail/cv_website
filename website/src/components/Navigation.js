@@ -18,7 +18,7 @@ class Navigation extends React.Component {
     }
 
     componentDidMount(props) {
-        this.setState({ navigation_tab_value: this.verifyTabIndex()})
+        this.setState({ navigation_tab_value: this.verifyTabIndex() })
     }
 
     verifyTabIndex = () => {
@@ -30,10 +30,13 @@ class Navigation extends React.Component {
                 switch (history.location.pathname) {
                     case "/introduction":
                         tab_index = 0;
+                        break;
                     case "/experience":
                         tab_index = 1;
+                        break;
                     case "/personality":
                         tab_index = 2;
+                        break;
                     default:
                         break;
                 }

@@ -20,7 +20,7 @@ export default createMuiTheme({
     },
     MuiGrid:{
       root:{
-        width:"99% !important",
+        width:"100% !important",
         marginBottom:"20px !important"
       }
     },

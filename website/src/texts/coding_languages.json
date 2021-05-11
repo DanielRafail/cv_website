@@ -1,0 +1,80 @@
+{
+    "data": [
+        {
+            "name":"Android Studio",
+            "experience":"1 year"
+        },
+        {
+            "name":"ASP.NET",
+            "experience":"2 year"
+        },
+        {
+            "name":"Bootstrap",
+            "experience":"3 year"
+        },
+        {
+            "name":"C#",
+            "experience":"1 year"
+        },
+        {
+            "name":"Firebase",
+            "experience":"1 year"
+        },
+        {
+            "name":"Git",
+            "experience":"5 year"
+        },
+        {
+            "name":"HTML",
+            "experience":"5 year"
+        },
+        {
+            "name":"Java",
+            "experience":"3 year"
+        },
+        {
+            "name":"Javascript",
+            "experience":"3 year"
+        },
+        {
+            "name":"Laravel",
+            "experience":"1 year"
+        },
+        {
+            "name":"MongoDB",
+            "experience":"1 year"
+        },
+        {
+            "name":"MySQL",
+            "experience":"2 year"
+        },
+        {
+            "name":"Node",
+            "experience":"1 year"
+        },
+        {
+            "name":"PHP",
+            "experience":"1 year"
+        },
+        {
+            "name":"Postgre",
+            "experience":"1 year"
+        },
+        {
+            "name":"React",
+            "experience":"2 year"
+        },
+        {
+            "name":"Sass",
+            "experience":"3 year"
+        },
+        {
+            "name":"SQL",
+            "experience":"3 year"
+        },
+        {
+            "name":"SQLlite",
+            "experience":"1 year"
+        }
+    ]
+}

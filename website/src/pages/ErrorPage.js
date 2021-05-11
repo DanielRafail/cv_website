@@ -7,9 +7,9 @@ class ErrorPage extends React.Component {
   render() {
     return (
       <MuiThemeProvider theme={createMuiTheme(theme)}>
-          <div>
+        <div>
 
-          </div>
+        </div>
       </MuiThemeProvider>
     );
   }
