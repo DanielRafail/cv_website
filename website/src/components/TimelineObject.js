@@ -42,8 +42,9 @@ class TimelineObject extends React.Component {
                                                 {obj.title}
                                             </Typography>
                                             {obj.definition && Array.isArray(obj.definition) ? obj.definition.map(function (def, k) {
-                                                return <Typography key={k}>{def}</Typography>}) 
-                                                : 
+                                                return <Typography key={k}>{def}</Typography>
+                                            })
+                                                :
                                                 <Typography>{obj.definition}</Typography>
                                             }
                                             <br /><br />

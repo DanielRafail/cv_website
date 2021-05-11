@@ -15,14 +15,14 @@ class Carousel extends React.Component {
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
                 {this.props.images ?
-                    <AutoplaySlider 
-                    className="carousel" 
-                    play={true}
-                    cancelOnInteraction={false}
-                    infinite={true}
-                    interval={6000}> 
+                    <AutoplaySlider
+                        className="carousel"
+                        play={true}
+                        cancelOnInteraction={false}
+                        infinite={true}
+                        interval={6000}>
                         {this.props.images.map(function (img, i) {
-                            return <div data-src={img} key={i}/>
+                            return <div data-src={img} key={i} />
                         })}
                     </AutoplaySlider>
                     :

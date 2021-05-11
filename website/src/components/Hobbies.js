@@ -15,8 +15,8 @@ class Hobbies extends React.Component {
                 <Grid container spacing={3}>
                     {this.props.content.map(function (data, i) {
                         return <Grid item xs={4} key={i}>
-                            <FadeOutImages title={data.title} src={data.image} alt={data.alt}/>
-                            {data.description ? <p>{data.description}</p> : <React.Fragment />}
+                            <FadeOutImages title={data.title} src={data.image} alt={data.alt} />
+                            {data.description ? <p className="image-with-text-description">{data.description}</p> : <React.Fragment />}
                         </Grid>
                     })}
                 </Grid>

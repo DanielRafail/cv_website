@@ -8,7 +8,7 @@ class LinkTab extends React.Component {
             <Tab
                 disableRipple={true}
                 onClick={(event) => {
-                    history.push(this.props.href, {tabIndex: this.props.tabIndex })
+                    history.push(this.props.href, { tabIndex: this.props.tabIndex })
                 }}
                 {...this.props}
             />

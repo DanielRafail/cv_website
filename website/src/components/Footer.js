@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
 
@@ -47,16 +46,12 @@ export default function Footer() {
             <footer className={classes.footer}>
                 <CssBaseline />
                 <Container maxWidth="sm">
-                    <div className="inline-block valign-middle">
-                        <MailOutlineIcon />
-                    </div>
-                    <Typography variant="body1" className="MuiTypography-body1 inline-block email">Danielraf2@gmail.com</Typography>
                     <div id="footer-icon-container">
                         <a href="https://www.linkedin.com/in/daniel-rafail-55b961187/">
-                            <img src={linkedin} className="footer-icon"  alt="linkedin icon"/>
+                            <img src={linkedin} className="footer-icon" alt="linkedin icon" />
                         </a>
                         <a href="https://github.com/DanielRafail">
-                            <img src={github} className="footer-icon" alt="github icon"/>
+                            <img src={github} className="footer-icon" alt="github icon" />
                         </a>
                     </div>
                     <Copyright />

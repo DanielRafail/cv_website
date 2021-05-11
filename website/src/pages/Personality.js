@@ -29,27 +29,29 @@ class Personality extends React.Component {
     constructor(props) {
         super(props);
         this.state = { windowWidth: window.innerWidth };
-      }
-    
-     handleResize = (e) => {
-      this.setState({ windowWidth: window.innerWidth });
-     };
-    
-     componentDidMount() {
-      window.addEventListener("resize", this.handleResize);
-     }
-    
-     componentWillUnmount() {
-      window.addEventListener("resize", this.handleResize);
-     } 
+    }
 
-     
+    handleResize = (e) => {
+        this.setState({ windowWidth: window.innerWidth });
+    };
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+
     render() {
-        const { windowWidth } = this.state; 
+        const { windowWidth } = this.state;
         return (
             <MuiThemeProvider theme={createMuiTheme(theme)}>
                 <div>
                     <Carousel images={windowWidth && windowWidth > 1000 ? [buildings, buildings2, pigeon, wall] : [smallbuildings, smallbuildings2, smallpigeon, smallwall]} />
+                    <p className="carousel-description">*All pictures shown in the slideshow above were taken by me in Montreal</p>
+
                 </div>
                 <Paper className="personality-title-paper no-margin">
                     <Typography variant="h3" color="textPrimary" align="center">
@@ -72,13 +74,13 @@ class Personality extends React.Component {
                     gridColor="cadetblue"
                 />
                 <Hobbies content={[
-                    {image:photography, title:"Photography", description:"*All pictures shown in the slideshow above were taken by me in Montreal", alt:"Closeup of someone taking a picture"},
-                    {image:taekwondo, title:"Taekwondo", description:null, alt:"Someone kicking up in the air"},
-                    {image:videogames, title:"Video Games", description:null, alt:"Xbox controller"},
-                    {image:guitar, title:"Music", description:null, alt:"Someone playing guitar"},
-                    {image:technology, title:"Technology", description:null, alt:"Someone coding on a mac"},
-                    {image:netflix, title:"Movies", description:null, alt:"Logo of netflix"}
-            ]}/>
+                    { image: photography, title: "Photography", alt: "Closeup of someone taking a picture" },
+                    { image: taekwondo, title: "Taekwondo", description: null, alt: "Someone kicking up in the air" },
+                    { image: videogames, title: "Video Games", description: null, alt: "Xbox controller" },
+                    { image: guitar, title: "Music", description: null, alt: "Someone playing guitar" },
+                    { image: technology, title: "Technology", description: null, alt: "Someone coding on a mac" },
+                    { image: netflix, title: "Movies", description: null, alt: "Logo of netflix" }
+                ]} />
             </MuiThemeProvider>
         );
     }
