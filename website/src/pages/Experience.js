@@ -52,7 +52,7 @@ class Experience extends React.Component {
                                 { title: "Experience", field: "experience" }
                             ]}
                             data={languages.data}
-                            options={{ showTitle: false , pageSize:10, pageSizeOptions:[10,15,20]}}
+                            options={{ showTitle: false , pageSize:10, pageSizeOptions:[10,15,20], emptyRowsWhenPaging:false}}
                         />
 
                     </div>
