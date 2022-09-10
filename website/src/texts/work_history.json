@@ -1,29 +1,38 @@
 {
-    "data": [
+  "data": [
+    {
+      "year": "2017",
+      "data": [
         {
-            "year": "2017",
-            "data": [
-                {
-                    "title": "Exofruit",
-                    "definition":"Received customer service experience, which resulted with an easier time dealing with public contact."
-                }
-            ]
-        },
-        {
-            "year": "2019",
-            "data": [
-                {
-                    "title": "D-Teck",
-                    "definition": ["Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.", "Designed and updated layouts to meet usability and performance requirements.", "Produced websites compatible with multiple browsers and devices."]
-                },
-                {
-                    "title": "Sylvan Adams YM-YWHA",
-                    "definition": "Experience in customer service, taking care of the elderly and achieving all their requests in a timely and respectful manner."
-                }
-            ]
-        },
-        {
-            "year": "Today"
+          "title": "Exofruit",
+          "definition": "Received customer service experience, which resulted with an easier time dealing with public contact."
         }
-    ]
+      ]
+    },
+    {
+      "year": "2019",
+      "data": [
+        {
+          "title": "D-Teck",
+          "definition": [
+            "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
+            "Designed and updated layouts to meet usability and performance requirements using Python and Typescript.",
+            "Produced Front-end and Back-end for websites compatible with multiple browsers and devices using React and Typescript."
+          ]
+        },
+        {
+          "title": "Sylvan Adams YM-YWHA",
+          "definition": [
+            "Experience in customer service, taking care of the elderly and achieving all their requests in a timely and respectful manner.",
+            "In charge of opening and closing the facility.",
+            "In charge of training the new staff.",
+            "In charge of taking care of deliveries and orders."
+          ]
+        }
+      ]
+    },
+    {
+      "year": "Current"
+    }
+  ]
 }

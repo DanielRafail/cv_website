@@ -59,17 +59,18 @@ class Personality extends React.Component {
                     </Typography>
                 </Paper>
                 <ImageWithText src={team} alt="Image of a team solving a puzzle"
-                    description="It is important for everyone to be able to work independently. No one wants to get hassled every second of the day over minor problems or slight misunderstandings. A problem-solving mind is required in order for one to be able to do his own research in order to figure out a solution to a certain problem you have been working on. But a team spirit is indeed necessary, as your colleagues and friends are there for a reason, to assist you. You shouldn't be scared of asking questions either, or to give out a helping hand. In an office, you work as a team, and there is no i in team. I strongly believe that a balance of both of those personalities is required for the perfect employee. And everyday is a day I push harder to reach that balance, and improve myself."
+                    description="As they say, there is no i in Team and I stand by that statement. Working with a team is a very important part of programming and one that I firmly believe in. Whether it is asking for help, having peer reviews, helping others or getting different points of view, I believe that working with others is a core element of what being a developer is about.
+                    "
                     title="A Balanced Team Player"
                     gridColor="skyblue"
                 />
                 <ImageWithText src={meeting} alt="Image of a meeting taking place"
-                    description="In order to learn, one must first ask questions. And some might find it intimidating based on who the correspondant is, but not me. I believe in the power of asking questions, of standing out, of speaking out. I wish to understand what I do, and how it works, because I believe having a fundamental understanding of what you are doing leads to better results. The person who asks a question in the classroom shouldn't be seen as the one having difficulties, but rather as the one who seeks more answers, a better understanding of the topic, and therefore will wield a sharper blade."
-                    title="Not Scared To Speak Up"
+                    description="Asking questions and have discussions is one of the best ways to learn and improve. I am always eager to learn more and as such believe engaging in such conversations to be a very healthy and rewarding experience. I value an environment which allows for open debates and which welcomes curiosity."
+                    title="Curious"
                     gridColor="darkgrey"
                 />
                 <ImageWithText src={idea} alt="Image of a lightbulb on top of someone's head"
-                    description="If everyone was to keep doing things the way they've always done, never looking for new answers, new techniques, new skills, nothing in this world would ever change. People need to ask themselves questions, they need to wonder about their work, their technique, their craft; Is it the best it could possibly be?  Am I doing it as best as I can? Or am I just doing it based on my previous experiences, on what i'm comfortable with, on what I know? These are questions everyone must ask themselves in order to improve. These are diffcult questions you will not find an answer straight away, it demands thinking, reflection, time. These are questions I often try to ask myself."
+                    description="I believe that there is always room for improvement. I also believe that a challenge is always fun. I am very entousiastic about figuring better solutions to problems and I always welcome the opinion of others. The essence of Technology and Computer Science is to always improve and find new and better way to do things."
                     title="Innovative"
                     gridColor="cadetblue"
                 />

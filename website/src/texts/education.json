@@ -1,34 +1,34 @@
 {
-    "data": [
+  "data": [
+    {
+      "year": "2011",
+      "data": [
         {
-            "year": "2011",
-            "data": [
-                {
-                    "title": "Collège international Marie de France",
-                    "definition":"\"Brevet des collèges\", General education certificate"
-                }
-            ]
-        },
-        {
-            "year": "2016",
-            "data": [
-                {
-                    "title": "Dawson College",
-                    "definition": "Associate of Science: Mathematics and Computer Science"
-                }
-            ]
-        },
-        {
-            "year": "2020",
-            "data": [
-                {
-                    "title": "Concordia University",
-                    "definition": "Software Engineering (BEng)"
-                }
-            ]
-        },
-        {
-            "year":"Today"
+          "title": "Collège international Marie de France",
+          "definition": "\"Brevet des collèges\", General education certificate."
         }
-    ]
+      ]
+    },
+    {
+      "year": "2016",
+      "data": [
+        {
+          "title": "Dawson College",
+          "definition": "Associate of Science: Mathematics and Computer Science."
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "data": [
+        {
+          "title": "Concordia University",
+          "definition": "Computer Science (BCompSc)."
+        }
+      ]
+    },
+    {
+      "year": "Current"
+    }
+  ]
 }
