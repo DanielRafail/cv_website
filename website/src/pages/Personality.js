@@ -70,7 +70,7 @@ class Personality extends React.Component {
                     gridColor="darkgrey"
                 />
                 <ImageWithText src={idea} alt="Image of a lightbulb on top of someone's head"
-                    description="I believe that there is always room for improvement. I also believe that a challenge is always fun. I am very entousiastic about figuring better solutions to problems and I always welcome the opinion of others. The essence of Technology and Computer Science is to always improve and find new and better way to do things."
+                    description="I believe that there is always room for improvement. I also believe that a challenge is always fun. I am very enthusiastic about figuring better solutions to problems and I always welcome the opinion of others. The essence of Technology and Computer Science is to always improve and find a new and better way to do things."
                     title="Innovative"
                     gridColor="cadetblue"
                 />
