@@ -39,7 +39,7 @@ class Introduction extends React.Component {
                 variant="body1"
                 className="index-container-text-center-description"
               >
-                Software Engineer
+                Software Developer
               </Typography>
             </div>
           </div>

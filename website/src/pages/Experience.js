@@ -65,13 +65,30 @@ class Experience extends React.Component {
               style={css}
               columns={[
                 { title: "Name", field: "name" },
-                { title: "Experience", field: "experience" },
+                { title: "Experience", field: "experience", customSort: (a,b) => 
+                  {
+                    const aParts = a.experience.split(' ');
+                    const bParts = b.experience.split(' ');
+
+                    if (aParts[1].includes('month') && bParts[1].includes('year')) {
+                      return -1;
+                    } else if (aParts[1].includes('year') && bParts[1].includes('month')) {
+                      return 1;
+                    } else {
+                      return aParts[0] - bParts[0];
+                    }
+                  }
+                },
               ]}
               data={languages.data}
               options={{
                 showTitle: false,
                 pageSize: 10,
                 pageSizeOptions: [10, 15, 20],
+                headerStyle:{
+                  borderRight: "3px solid grey",
+                  borderBottom: "3px solid grey"
+                }
               }}
             />
           </div>

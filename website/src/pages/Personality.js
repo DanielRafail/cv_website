@@ -23,7 +23,7 @@ import photography from "../images/photography.jpg"
 import videogames from "../images/videogames.jpg"
 import guitar from "../images/guitar.jpg"
 import technology from "../images/technology.jpg"
-import netflix from "../images/netflix.jpg"
+import gym from "../images/gym.jpg"
 
 class Personality extends React.Component {
     constructor(props) {
@@ -76,11 +76,11 @@ class Personality extends React.Component {
                 />
                 <Hobbies content={[
                     { image: photography, title: "Photography", alt: "Closeup of someone taking a picture" },
-                    { image: taekwondo, title: "Taekwondo", description: null, alt: "Someone kicking up in the air" },
+                    { image: taekwondo, title: "Martial Arts", description: null, alt: "Someone kicking up in the air" },
                     { image: videogames, title: "Video Games", description: null, alt: "Xbox controller" },
                     { image: guitar, title: "Music", description: null, alt: "Someone playing guitar" },
                     { image: technology, title: "Technology", description: null, alt: "Someone coding on a mac" },
-                    { image: netflix, title: "Movies", description: null, alt: "Logo of netflix" }
+                    { image: gym, title: "Fitness", description: null, alt: "Man lifting weights" }
                 ]} />
             </MuiThemeProvider>
         );

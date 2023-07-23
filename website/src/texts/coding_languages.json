@@ -5,15 +5,15 @@
       "experience": "1 year"
     },
     {
-      "name": "ASP.NET",
-      "experience": "2 year"
-    },
-    {
-      "name": "Bootstrap",
-      "experience": "3 year"
+      "name": "C",
+      "experience": "1 year"
     },
     {
       "name": "C#",
+      "experience": "1 year"
+    },
+    {
+      "name": "C++",
       "experience": "1 year"
     },
     {
@@ -22,31 +22,31 @@
     },
     {
       "name": "Git",
-      "experience": "5 year"
-    },
-    {
-      "name": "HTML",
-      "experience": "5 year"
+      "experience": "5 years"
     },
     {
       "name": "Java",
-      "experience": "3 year"
+      "experience": "4 years"
     },
     {
       "name": "Javascript",
-      "experience": "3 year"
+      "experience": "5 years"
     },
     {
       "name": "Laravel",
       "experience": "1 year"
     },
     {
+      "name": "Lisp",
+      "experience": "6 months"
+    },
+    {
       "name": "MongoDB",
-      "experience": "1 year"
+      "experience": "6 months"
     },
     {
       "name": "MySQL",
-      "experience": "2 year"
+      "experience": "5 years"
     },
     {
       "name": "Node",
@@ -57,20 +57,24 @@
       "experience": "1 year"
     },
     {
-      "name": "Postgre",
-      "experience": "1 year"
+      "name": "PostgreSQL",
+      "experience": "6 months"
+    },
+    {
+      "name": "Prolog",
+      "experience": "6 months"
+    },
+    {
+      "name": "Python",
+      "experience": "3 years"
     },
     {
       "name": "React",
-      "experience": "2 year"
-    },
-    {
-      "name": "Sass",
-      "experience": "3 year"
+      "experience": "3 years"
     },
     {
       "name": "SQL",
-      "experience": "3 year"
+      "experience": "5 years"
     },
     {
       "name": "SQLlite",

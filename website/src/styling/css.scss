@@ -111,7 +111,7 @@ body > #root > .personality-title-paper {
   text-align: center;
   color: white;
   display: inline-flex;
-  min-width: 100%;
+  margin: 0 auto;
 }
 
 .index-container-text-container {
@@ -139,6 +139,7 @@ body > #root > .personality-title-paper {
   text-decoration: underline;
   opacity: 0;
   transition: opacity 1.5s;
+  color:rgba(44, 42, 42, 0.893);
   font-size: 30px !important;
 }
 
@@ -185,6 +186,7 @@ body > #root > .personality-title-paper {
 
 section > .index-paragraph {
   font-size: 20px;
+  margin-top:5px;
 }
 
 .blank-page {
