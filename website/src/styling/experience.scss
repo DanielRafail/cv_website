@@ -1,0 +1,71 @@
+.experience-container {
+  margin: 3% !important;
+}
+
+#root > .experience-container {
+  ul > li {
+    padding: 5px 10px !important;
+  }
+}
+
+#root > .experience-container > .experience-languages-table {
+  table > thead > tr > th,
+  table > tbody > tr > td {
+    width: 50% !important;
+  }
+  th:nth-child(2),
+  td:nth-child(2) {
+    text-align: right;
+  }
+  table > thead > tr > th {
+    font-weight: bold;
+  }
+}
+
+#root > div > div > table > thead > tr > th {
+  font-weight: bold;
+}
+
+.experience-languages-table {
+    margin-top: 50px;
+    td,
+    th {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+  .experience-languages-table > div > div:first-of-type {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+  }
+  
+  .experience-languages-table > div > table > tfoot > tr > td {
+    border-top: none;
+  }
+
+@media only screen and (max-width: 1100px) {
+  #root > .experience-container {
+    ul > li > div {
+      width: 275px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #root > .experience-container {
+    ul > li > div {
+      width: 100% !important;
+    }
+  }
+  #root > .experience-container > ul {
+    display: block;
+  }
+  #root > .experience-container {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    #root > .experience-container > ul {
+      margin-left: -9% !important;
+    }
+  }

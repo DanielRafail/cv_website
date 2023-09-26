@@ -1,28 +1,22 @@
 import React from "react";
-import theme from "../styling/theme";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
-class FadeOutImages extends React.Component {
-  render() {
-    return (
-      <MuiThemeProvider theme={createMuiTheme(theme)}>
-        <div className="hobbies-container">
-          <img
-            src={this.props.src}
-            className="fade-out-image"
-            alt={this.props.alt}
-          ></img>
+const FadeOutImages = (props) => {
+  return (
+    <>
+      <div className="hobby-wrapper">
+        <div className="hobby">
+          <img src={props.src} className="fade-out-image" alt={props.alt} />
           <Typography
             variant="body1"
-            className="MuiTypography-body1 hobbies-container-text-center"
+            className="hobby-text"
           >
-            {this.props.title}
+            {props.title}
           </Typography>
         </div>
-      </MuiThemeProvider>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
 export default FadeOutImages;

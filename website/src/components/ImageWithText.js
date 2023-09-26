@@ -1,46 +1,38 @@
 import React from "react";
-import theme from "../styling/theme";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 
-class ImageWithText extends React.Component {
-  render() {
+const ImageWithText = (props) => {
+  function getBody() {
     return (
-      <MuiThemeProvider theme={createMuiTheme(theme)}>
-        <Grid
-          container
-          spacing={3}
-          className={"image-with-text grid-color-" + this.props.gridColor}
-        >
-          <Grid item xs={1}></Grid>
-          <Grid item xs={3}>
-            <img
-              src={this.props.src}
-              alt={this.props.alt}
-              className="personality-image"
-            />
-          </Grid>
-          {this.props.title ? (
-            <Grid item xs={7}>
-              <Typography variant="h4" color="textPrimary">
-                {this.props.title}
-              </Typography>
-              <Typography variant="body1" color="textPrimary">
-                {this.props.description}
-              </Typography>
-            </Grid>
-          ) : (
-            <Grid item xs={7}>
-              <Typography variant="body1" color="textPrimary">
-                {this.props.description}
-              </Typography>
-            </Grid>
-          )}
-        </Grid>
-      </MuiThemeProvider>
+      props.content && (
+        <div className={props.title.toLowerCase()}>
+          {props.content.map(function (data, i) {
+            return (
+              <props.component
+                key={i}
+                title={data.title}
+                src={data.image}
+                description={data.description ? data.description : ""}
+                link = {data.link ? data.link : null}
+                alt={data.alt}
+              />
+            );
+          })}
+        </div>
+      )
     );
   }
-}
+
+  return (
+    <>
+      <div className={props.title.toLowerCase() + "-title"}>
+        <Typography variant="h3" color="textPrimary">
+          {props.title}
+        </Typography>
+      </div>
+      {getBody()}
+    </>
+  );
+};
 
 export default ImageWithText;

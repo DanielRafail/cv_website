@@ -11,92 +11,76 @@ import Typography from "@material-ui/core/Typography";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import Container from "@material-ui/core/Container";
 
-class TimelineObject extends React.Component {
-  render() {
-    const props = this.props;
-    return (
-      <MuiThemeProvider theme={createMuiTheme(theme)}>
-        <Container className="experience-container">
-          <Typography variant="h3" color="textPrimary">
-            {props.title}
-          </Typography>
-          <Timeline align="left">
-            {props.json && props.json.data ? (
-              props.json.data.map(function (object, j) {
-                return (
-                  <TimelineItem key={j}>
-                    <TimelineOppositeContent>
-                      <Typography variant="body2" color="textSecondary">
-                        {object.year}
-                      </Typography>
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                      <TimelineDot />
-                      {object && object.data ? (
-                        <TimelineConnector />
-                      ) : (
-                        <React.Fragment />
-                      )}
-                    </TimelineSeparator>
-                    <TimelineContent>
-                      {object && object.data ? (
-                        object.data.map(function (obj, i) {
-                          return (
-                            <div key={i}>
-                              <br />
-                              <br />
-                              <Typography variant="h6" component="h1">
-                                {obj.title}
-                                {props.spacedTitle ? (
-                                  <React.Fragment>
-                                    <br />
-                                    <br />
-                                  </React.Fragment>
-                                ) : (
-                                  <React.Fragment />
-                                )}
-                              </Typography>
-                              {obj.definition &&
-                              Array.isArray(obj.definition) ? (
-                                obj.definition.map(function (def, k) {
-                                  return (
-                                    <Typography key={k}>
-                                      {props.spacedParagraphs ? (
-                                        <React.Fragment>
-                                          {" "}
-                                          {def}
-                                          <br />
-                                          <br />
-                                        </React.Fragment>
-                                      ) : (
-                                        def
-                                      )}
-                                    </Typography>
-                                  );
-                                })
-                              ) : (
-                                <Typography>{obj.definition}</Typography>
+const TimelineObject = (props) => {
+  return (
+    <MuiThemeProvider theme={createMuiTheme(theme)}>
+      <Container className="experience-container">
+        <Typography variant="h3" color="textPrimary">
+          {props.title}
+        </Typography>
+        <Timeline align="left">
+          {props.json &&
+            props.json.data &&
+            props.json.data.map(function (dataElement, j) {
+              return (
+                <TimelineItem key={j}>
+                  <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                      {dataElement.year}
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot />
+                    {dataElement && dataElement.data && <TimelineConnector />}
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    {dataElement &&
+                      dataElement.data &&
+                      dataElement.data.map(function (obj, i) {
+                        return (
+                          <div key={i}>
+                            <br />
+                            <br />
+                            <Typography variant="h6" component="h1">
+                              {obj.title}
+                              {props.spacedTitle && (
+                                <>
+                                  <br />
+                                  <br />
+                                </>
                               )}
-                              <br />
-                              <br />
-                            </div>
-                          );
-                        })
-                      ) : (
-                        <React.Fragment />
-                      )}
-                    </TimelineContent>
-                  </TimelineItem>
-                );
-              })
-            ) : (
-              <React.Fragment />
-            )}
-          </Timeline>
-        </Container>
-      </MuiThemeProvider>
-    );
-  }
-}
+                            </Typography>
+                            {obj.definition && Array.isArray(obj.definition) ? (
+                              obj.definition.map(function (def, k) {
+                                return (
+                                  <Typography key={k}>
+                                    {props.spacedParagraphs && (
+                                      <>
+                                        {" "}
+                                        {def}
+                                        <br />
+                                        <br />
+                                      </>
+                                    )}
+                                  </Typography>
+                                );
+                              })
+                            ) : (
+                              <Typography>{obj.definition}</Typography>
+                            )}
+                            <br />
+                            <br />
+                          </div>
+                        );
+                      })}
+                  </TimelineContent>
+                </TimelineItem>
+              );
+            })}
+        </Timeline>
+      </Container>
+    </MuiThemeProvider>
+  );
+};
 
 export default TimelineObject;

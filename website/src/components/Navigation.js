@@ -1,26 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Paper from "@material-ui/core/Paper";
 import LinkTab from "./LinkTab";
-import theme from "../styling/theme";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 import history from "../history";
 
-class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      navigation_tab_value: 0,
-    };
-  }
+const Navigation = () => {
+  let [navigation_tab_value, setNavigation_tab_value] = useState(0);
 
-  componentDidMount(props) {
-    this.setState({ navigation_tab_value: this.verifyTabIndex() });
-  }
+  useEffect(() => {
+    setNavigation_tab_value(verifyTabIndex());
+  }, []);
 
-  verifyTabIndex = () => {
-    var tab_index = 0;
+  function verifyTabIndex() {
+    let tab_index = 0;
     if (history.location && history.location.state) {
       tab_index = history.location.state.tabIndex;
     } else {
@@ -41,42 +34,38 @@ class Navigation extends React.Component {
       }
     }
     return tab_index;
-  };
+  }
 
-  handleChange = (event, newValue) => {
-    this.setState(() => ({
-      navigation_tab_value:
-        this.state.location && this.state.location.tabIndex
-          ? this.state.location.tabIndex
-          : newValue,
-    }));
-  };
-  render() {
-    return (
-      <MuiThemeProvider theme={createMuiTheme(theme)}>
-        <nav id="navigation-header">
-          <Paper>
-            <Tabs
-              TabIndicatorProps={{
-                style: {
-                  animation: "none",
-                },
-              }}
-              value={this.state.navigation_tab_value}
-              onChange={this.handleChange}
-              indicatorColor="primary"
-              textColor="primary"
-              centered
-            >
-              <LinkTab label="Introduction" href="/introduction" tabIndex={0} />
-              <LinkTab label="Experience" href="/experience" tabIndex={1} />
-              <LinkTab label="Personality" href="/personality" tabIndex={2} />
-            </Tabs>
-          </Paper>
-        </nav>
-      </MuiThemeProvider>
+  function handleChange(event, newValue) {
+    setNavigation_tab_value(
+      history.location && history.location.tabIndex
+        ? history.location.tabIndex
+        : newValue
     );
   }
-}
+
+  return (
+    <nav id="navigation-header">
+      <Paper>
+        <Tabs
+          TabIndicatorProps={{
+            style: {
+              animation: "none",
+            },
+          }}
+          value={navigation_tab_value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          centered
+        >
+          <LinkTab label="Introduction" href="/introduction" tabIndex={0} />
+          <LinkTab label="Experience" href="/experience" tabIndex={1} />
+          <LinkTab label="Personality" href="/personality" tabIndex={2} />
+        </Tabs>
+      </Paper>
+    </nav>
+  );
+};
 
 export default withRouter(Navigation);

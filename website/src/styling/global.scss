@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+}
+
+#root > *:not(#navigation-header):not(.no-margin) {
+  padding: 8px;
+  margin: 0px;
+}
+
+.email {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px 20px;
+}
+
+.footer-container > footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-container > footer > div {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+  .index-paragraph {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.blank-page {
+  height: 2000px;
+  width: 2000px;
+  z-index: 99;
+  margin-top: -10%;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+#navigation-header > * {
+  a {
+    width: 33%;
+    max-width: 33%;
+  }
+}
+
+body > #root > .personality-title-paper {
+  padding: 30px 10px;
+  h3 {
+    font-size: 30px;
+  }
+}

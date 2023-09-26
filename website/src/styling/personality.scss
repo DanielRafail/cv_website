@@ -1,0 +1,260 @@
+.hobbies,
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobby-wrapper,
+.project-wrapper {
+  position: relative;
+  display: flex;
+  flex: 0 0 calc(33.33% - 10px);
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-wrapper {
+  margin-bottom: 40px;
+}
+
+.hobbies-title,
+.projects-title {
+  text-align: center;
+  padding: 8px 0px 40px 0px !important;
+}
+
+.projects-title {
+  padding-top: 40px !important;
+}
+
+.hobby-text,
+.project-description {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  text-decoration: underline;
+  transform: translate(-50%, -50%);
+}
+
+.project-description {
+  text-decoration: none;
+  width: 100%;
+  text-align: justify;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.hobby-text {
+  color: rgba(44, 42, 42, 0.893);
+  opacity: 0;
+  transition: opacity 1.5s;
+  font-size: 35px !important;
+}
+
+.hobby:hover,
+.hobby:active {
+  .fade-out-image {
+    opacity: 0.5;
+    transition: opacity 1.5s;
+  }
+  .hobby-text {
+    opacity: 1;
+    transition: opacity 1.5s;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fade-out-image,
+.project-image {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.fade-out-image {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+
+body > #root > .image-with-text {
+  text-align: justify;
+  margin-bottom: 50px !important;
+  border: 4px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 30px !important;
+}
+
+.personality-text {
+  flex: 3;
+  p {
+    margin-top: 15px;
+  }
+}
+
+.personality-image-wrapper {
+  display: block;
+  position: relative;
+  flex: 1;
+}
+
+body > #root > .personality-title-paper {
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 30px 100px;
+  margin: 50px 0px 150px 0px;
+  background-color: lightsteelblue;
+}
+
+.personality-image {
+  width: 350px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project:hover,
+.project > .project-title,
+.project-description {
+  transition: 0.3s ease-in-out;
+}
+
+.project:hover > .project-image {
+  filter: blur(3px);
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.project:hover > .project-title {
+  transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project:hover > .project-description {
+  opacity: 1;
+}
+
+.project-description {
+  opacity: 0;
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  border: 3px solid #adadad;
+  border-bottom: none;
+}
+
+.projects{
+  margin-bottom: 70px !important;
+}
+
+.project-title {
+  background-color: #adadad;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  margin-top: -6px !important;
+  height: 40px;
+  padding-top: 7px;
+  border: 3px solid #adadad;
+  border-top: none;
+  font-weight: bold !important;
+}
+
+.project-image {
+  cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+  .hobby-wrapper,
+  .project-wrapper {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 960px) {
+  .hobby-wrapper,
+  .project-wrapper {
+    flex: 0 0 calc(100% - 10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .hobby,
+  .project {
+    transform: scale(0.8);
+  }
+  .project:hover {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1575px) {
+  .personality-image-wrapper {
+    flex: 1;
+  }
+  .personality-text {
+    flex: 2;
+  }
+}
+
+@media (max-width: 1190px) {
+  .personality-image-wrapper {
+    flex: 1;
+  }
+  .personality-text {
+    flex: 1.5;
+  }
+}
+
+@media (max-width: 1021px) {
+  .image-with-text {
+    flex-direction: column;
+  }
+  .personality-image-wrapper {
+    margin-top: 110px;
+  }
+  .personality-text {
+    margin-top: 150px;
+    h4 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  body > #root > .personality-title-paper {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .index-container-text-container {
+    .index-container-text-center {
+      font-size: 30px;
+    }
+    .index-container-text-center-description {
+      font-size: 20px;
+    }
+  }
+
+  .index-paragraph-container {
+    width: 90%;
+    padding-left: 6%;
+  }
+}
+
