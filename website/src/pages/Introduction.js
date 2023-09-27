@@ -45,7 +45,7 @@ const Introduction = () => {
             associates in Computer Science and Mathematics from Dawson, and a
             Bachelor of Computer Science from Concordia. I have coded multiple
             school projects, all of which are available on my Github. I have
-            shorty worked as a programmer giving me some insight on how
+            shortly worked as a programmer giving me some insight on how
             professionally developed business software looks like. I have a wide
             range of experience including everything from APIs, to designing UI
             and databases.
